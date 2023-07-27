@@ -1,0 +1,338 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(rgba(88, 90, 92,0.6),rgba(107, 108, 109,0.7)),url(logo-remove.png);
+
+    background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+
+  
+    
+    
+}
+.form-on{
+  margin: 200px;
+    /* display: flex;
+    justify-content: center; */
+ padding: 50px  150px;
+    background-color: rgba(128, 116, 116, 0.7);
+    border-radius: 100px;
+   
+}
+.form-off{
+    /* display: none;``````` */
+}
+.form-on h2{
+    padding-left: 25px;
+    /* text-align: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* word-spacing: 10px; */
+    letter-spacing: 2px;
+    color: beige;
+    cursor: pointer;
+ margin-bottom: 30px;
+}
+.form-on h2:hover{
+    color: gray;
+    background-color: aliceblue;
+    /* transform: scale3d(2703deg,3360deg,1200deg); */
+    transition: 5s ease;
+    border-radius: 20px;
+
+}
+.form-on h2 span{
+    /* padding-left: 20px; */
+}
+.nam input {
+    padding-left: 20px;
+    /* padding-bottom: -10px; */
+   padding-top: 30px;
+    width: 300px;
+    height: 50px;
+    /* border-radius: 10px; */
+    border: none;
+    outline: none;  
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 248, 248);
+    font-size: 20px;
+   border-bottom: 2px solid rgb(165, 158, 158);
+   background-color: transparent;
+
+}
+.nam {
+    position: relative;
+}
+.nam label{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-size: 20px;
+    color: rgb(231, 222, 222);
+    pointer-events: none;
+
+}
+
+
+.nam input:focus~label,
+.nam input:valid~label
+{
+    /* color: rgb(31, 29, 29); */
+    /* position: absolute; */
+    transform: translate(-15px,-15px);
+    /* border-bottom: 1px solid white; */
+    /* border-top: 1px solid white; */
+   
+    transition: 1S ease;
+
+    font-size: 15px;
+    /* pointer-events: none; */
+    /* cursor: pointer; */
+    /* transition: 1s ease; */
+    color: rgb(219, 210, 210);
+
+}
+
+.nam .eye{
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    left: 270px;
+    transform: scale(1);
+   
+    color: rgb(92, 87, 87);
+
+   
+}
+/* .nam .eye-1{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    transform: scale(1);
+} */
+
+
+ .nam .eye-close{
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    left: 270px;
+    transform: scale(1);
+    pointer-events: none;
+    color: rgb(87, 82, 82);
+
+}
+
+
+
+/* button */
+
+.form-on .buttonon{
+padding: 20px 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px 100px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(212, 127, 16);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.form-on .buttonon:valid{
+    transform: scale(0.9);
+    transition: 2s ease;
+}
+
+ .buttonoff{
+    display: none;
+}
+
+.nam input[type="date"]{
+    font-size: 20px;
+    color: rgba(128, 116, 116, 0.5);
+}
+.nam input[type="date"]:focus,
+.nam input[type="date"]:valid{
+    color: white;
+
+
+}
+ .gen{
+    position: relative;
+    margin-left: 10px;
+}
+
+ .gen span{
+    color: wheat;
+    font-size: 20px;
+    padding-right: 20px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+.gen h4{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+ .gen input [type="radio"]{
+    width: 50px;
+   height: 50px;
+   border: 2px solid black;
+   padding: 20px;
+
+}
+.team{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+.form-on .team input[type="checkbox"]{
+    
+   
+}
+/* date */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.nam .age6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   width: 100px;
+    background-color: rgb(245, 233, 233);
+    margin-left: 10px;
+    color: rgb(133, 128, 121);
+    padding: 0px;
+    border-radius: 30px;
+}
+.nam .age5{
+    display: none;
+}
+.nam .age1{
+    display:none;
+}
+
+.nam span{
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    font-size: 20px;
+    color: rgb(248, 245, 238);
+    transform: scale(0);
+    margin-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nam img{
+    position: absolute;
+    top: 43px;
+    left: 20px;
+    transform: scale(0);
+
+}
+.phone input{
+    padding-left: 69px;
+}
+.nam input:focus~span,
+.nam input:valid~span,
+.nam input:focus~img,
+.nam input:valid~img{
+    transform: scale(1);
+    transition: 1s ease;
+}
+
+
+/* move */
+.off{
+transform: translateX(-1000px);
+overflow: hidden;
+transition: 5s ease;
+}
+.off1{
+transform: translateX(1000px);
+overflow: hidden;
+transition: 5s ease;
+}
+.form2{
+    display: none;
+    
+}
+
+
+/* form-2 ---------------------------------------*/
+.pass1 .eye-close1{
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    left: 270px;
+    transform: scale(1);
+    pointer-events: none;
+    
+
+}
+.pass1 .eye1{
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    left: 270px;
+    transform: scale(1);
+   
+    
+
+   
+}
+.form1{
+    display: none;
+    transition: 4s ease;
+}
+
+.form-on .websend1{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px 100px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(212, 127, 16);
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+
+/* alert */
+.form-on .al{
+    display: none;
+}
+.ale{
+
+}
+.form-on .aler{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    color: rgba(247, 245, 245, 0.9);
+    text-shadow: 3px 3px 30px  rgb(238, 23, 23);
+}
+.form-on .pa{
+    font-size: 15px;
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create-account.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+
+    <div class="form-on" >
+        <h2><span type="btn" onclick="singup()"> Sign-up</span> <span>/</span><span onclick="singup1()">Sign-in</span>
+        </h2>
+        <form action=" "  class="form-off" id="form-off">
+
+<!-- first name -->
+            <div class="nam first" id="cler">
+                <input type="text" id="first" required>
+                <label for="first" id="label">First Name</label>
+                <div class=" al" id="al" >
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> Name is most be Three Letters  !!!
+                    </div>
+                </div>
+            </div>
+
+            <!-- last name -->
+            <div class="nam  last">
+
+                <input type="text" id="last" required>
+                <label for="last" id="label">Last Name</label>
+                <div class="al" id="alast">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> Name is most be One Letters  !!!
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- email -->
+            <div class="nam email">
+
+                <input type="text" id="email" required>
+                <label for="email" id="label">Create Email-ID</label>
+                <div class="al" id="aemail">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> Enter the Corrent Email Formate  !!!
+                    </div>
+                </div>
+            </div>
+
+            <!-- new passsword -->
+            <div class="nam new-pass">
+
+                <input type="password" id="createpass" required>
+                <label for="createpass" id="label">Create Password</label>
+                <i class="eye bi bi-eye" id="eye" onclick="eye1()"></i>
+                <i class="bi bi-eye-slash  eye-close" id="eye-close"></i>
+                <div class="al" id="apass">
+                    <div class="pa aler " id="aler">
+                        <i class=" bi bi-exclamation-triangle"></i>Password must
+                         contains min 6 Minimum 1char 1Uppercase
+                        1 Lowercase 1 special char 1 Num  !!!
+                    </div>
+                </div>
+
+
+            </div>
+<!-- re password -->
+            <div class="nam repass">
+
+                <input type="text" id="repass" required>
+                <label for="repass" id="label">Re-Enter Password</label>
+                <div class="al" id="arepass">
+                    <div class=" aler pa" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                        Password Not Match (please Enter corrent Password)  !!!
+                    </div>
+                </div>
+            </div>
+
+<!-- phone number -->
+            <div class="nam phone ">
+
+                <input type="number" id="number" required>
+                <label for="number" id="label">Phone Number</label>
+                <img src="flag.png" width="20" alt="">
+                <span>+91</span>
+                <div class="al" id="anum">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                         Number is must be 10 Number  !!!
+                    </div>
+                </div>
+            </div>
+ <!-- date of birth -->
+            <div class="nam date">
+
+                <input type="date" id="dateyear" required>
+                <label for="date" id="label">Date of Birth</label>
+                <div class="age5" id="age6">
+                    <h5>Age:</h5> <h4 id="age"></h4></div>
+                <div class="age1" id="ag1">
+                   
+                    <div class=" aler" id="aler" style=" color: rgb(240, 240, 236);
+                    text-shadow:10px 10px 30px yellow;">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                         you not Elegible(only 18 age after)  !!!
+                    </div>
+                  </div>
+                <div class="al" id="adate">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                         Select your Date of Birth  !!!
+                    </div>
+                </div>
+            </div>
+
+ <!-- adhar -->
+            <div class="nam  athar">
+
+                <input type="number" id="athar" required>
+                <label for="athar" id="label">Adhar Number</label>
+                <div class="al" id="aathar">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                        Adhar Number is must be 12 Number  !!!
+                    </div>
+                </div>
+            </div>
+
+<!-- pan number -->
+            <div class="nam pan">
+
+                <input type="text" id="pan" required>
+                <label for="pan" id="label">PAN-Number</label>
+                <div class="al" id="apan">
+                    <div class="pa aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> 
+                        PAN-Number is must be 10 Number and Only Uppercase /Example[12345ABCD6]  !!!
+                    </div>
+                </div>
+            </div>
+
+ <!-- nike -->
+            <div class="nam nike">`
+
+                <input type="text" id="nick" required>
+                <label for="nike" id="label">Nick Name</label>
+                  <div class=" al" id="anick">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> Name is most be Three Letters  !!!
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="gen"  >
+                <h4>General</h4>
+                <input type="radio" id="General" name="General" value="male">
+                <span for="">Male</span>
+                <input type="radio" id="General1" name="General" value="female">
+                <span for="">Female</span>
+                <input type="radio" id="General2" name="General" value="other">
+                <span for="">Other</span>
+                <div class=" al" id="ageneral">
+                    <div class=" aler" id="aler">
+                        <i class="bi bi-exclamation-triangle"></i> Select your General !!!
+                    </div>
+                </div>
+
+            </div>
+            <div class="team">
+                <input type="checkbox" id="checkd" required>
+                <span>Terms and Condition</span>
+            </div>
+
+          
+
+           
+           
+
+        </form>
+       
+        <button onclick="send()" id="savereg" class="buttonon">Register</button>
+        <!-- form2 -->
+        <div class="form1" id="form1">
+            <form action="">
+                <div class="nam  last">
+                    <input type="text" id="user" required>
+                    <label for="last" id="label">Enter User Name</label>
+                    <div class="al" id="auser">
+                        <div class=" aler" id="aler">
+                            <i class="bi bi-exclamation-triangle"></i> 
+                            Not Match username  !!!
+                        </div>
+                    </div>
+                </div>
+                <div class="nam email">
+
+                    <input type="text" id="emailid" required>
+                    <label for="email" id="label">Enter Your Email-ID</label>
+                    <div class="al" id="aemaila">
+                        <div class=" aler" id="aler">
+                            <i class="bi bi-exclamation-triangle"></i> 
+                            invalid Email ID  !!!
+                        </div>
+                    </div>
+                </div>
+                <div class="nam pass1">
+
+                    <input type="password" id="createpass12" required>
+                    <label for="createpass" id="label">Enter your Password</label>
+                    <i class="eye1 bi bi-eye" id="eye1" onclick="eye2()"></i>
+                    <i class="bi bi-eye-slash  eye-close1" id="eye-close1"></i>
+                    <div class="al" id="apassa">
+                        <div class=" aler" id="aler">
+                            <i class="bi bi-exclamation-triangle"></i> 
+                            Wrong Password  !!!
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+            </form>
+            <button id="websend" onclick="send2()" class="websend1">Sign-in</button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="create-account.js"></script>
+</body>
+
+</html>
